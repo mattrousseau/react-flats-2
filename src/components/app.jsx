@@ -31,7 +31,7 @@ class App extends Component {
       <div>
         <FlatList selectedFlat={this.state.selectedFlat} flats={this.state.flats} selectFlat={this.selectFlat} />
         <div className="map-container">
-          <GoogleMapReact center={ this.center() } defaultZoom={12}>
+          <GoogleMapReact center={ this.center() } defaultZoom={14}>
             <div className="marker">
               <Marker lat={this.state.selectedFlat.lat} lng={this.state.selectedFlat.lng} />
             </div>
